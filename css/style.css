@@ -93,17 +93,19 @@ main section { position: relative; padding: 96px 0; scroll-margin-top: var(--hea
 .site-footer {
   background-color: var(--black);
   background-image:
-    /* drifting ivory-marble cells */
-    radial-gradient(ellipse 50% 42% at 4% 8%, rgba(246,241,228,0.16), transparent 60%),
-    radial-gradient(ellipse 38% 34% at 18% 22%, rgba(207,231,227,0.14), transparent 65%),
-    /* pale-to-deep teal agate bands */
-    radial-gradient(ellipse 46% 50% at 92% 14%, rgba(159,212,206,0.22), transparent 60%),
-    radial-gradient(ellipse 55% 50% at 100% 92%, rgba(29,107,77,0.5), transparent 58%),
-    radial-gradient(ellipse 48% 44% at 78% 70%, rgba(20,99,87,0.4), transparent 60%),
-    radial-gradient(ellipse 50% 46% at 18% 88%, rgba(15,61,44,0.5), transparent 58%),
-    radial-gradient(ellipse 36% 34% at 45% 48%, rgba(13,61,44,0.32), transparent 65%),
-    linear-gradient(160deg, #030704 0%, #081912 30%, #0b231b 55%, #04100b 100%);
-  background-blend-mode: screen, screen, screen, screen, screen, screen, screen, normal;
+    /* black vignette corners */
+    radial-gradient(ellipse 62% 52% at 100% 100%, rgba(0,0,0,0.5), transparent 58%),
+    radial-gradient(ellipse 58% 48% at 0% 0%, rgba(0,0,0,0.45), transparent 58%),
+    /* bright ivory/white marble cells */
+    radial-gradient(ellipse 54% 46% at 14% 16%, rgba(255,255,255,0.42), transparent 60%),
+    radial-gradient(ellipse 44% 40% at 84% 20%, rgba(255,255,255,0.32), transparent 60%),
+    radial-gradient(ellipse 40% 36% at 50% 54%, rgba(255,255,255,0.24), transparent 62%),
+    /* emerald/green agate bands */
+    radial-gradient(ellipse 50% 46% at 92% 86%, rgba(29,107,77,0.55), transparent 58%),
+    radial-gradient(ellipse 44% 40% at 6% 88%, rgba(15,61,44,0.5), transparent 58%),
+    radial-gradient(ellipse 34% 32% at 70% 38%, rgba(20,99,87,0.35), transparent 60%),
+    linear-gradient(160deg, #060b07 0%, #0c1810 28%, #0e201a 52%, #04090a 100%);
+  background-blend-mode: multiply, multiply, screen, screen, screen, screen, screen, screen, normal;
 }
 
 /* gold-leaf veins — soft branching clusters rather than straight cracks */
@@ -130,32 +132,6 @@ main section { position: relative; padding: 96px 0; scroll-margin-top: var(--hea
   opacity: 0.8;
   mix-blend-mode: screen;
   pointer-events: none;
-}
-
-/* slow gold shimmer sweep for a brilliant, polished resin sheen */
-.hero::after,
-.about-section::after,
-.portfolio-section::after,
-.workshops-section::after,
-.custom-section::after,
-.shop-section::after,
-.contact-section::after,
-.site-footer::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(115deg, transparent 30%, rgba(243,215,132,0.16) 46%, rgba(255,255,255,0.22) 50%, rgba(243,215,132,0.16) 54%, transparent 70%);
-  background-size: 260% 260%;
-  background-position: 0% 0%;
-  mix-blend-mode: overlay;
-  pointer-events: none;
-  animation: shimmer-sweep 14s ease-in-out infinite;
-}
-
-@keyframes shimmer-sweep {
-  0%   { background-position: 10% 0%; }
-  50%  { background-position: 90% 100%; }
-  100% { background-position: 10% 0%; }
 }
 
 /* ===================================================================
