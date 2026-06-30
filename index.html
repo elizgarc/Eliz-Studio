@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eliz Studio | Luxury Resin Art</title>
+<meta name="description" content="Eliz Studio — luxury resin art, custom pieces, and workshops by artist Eliz Stella. Where art meets luxury resin design.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9733;</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="sparkle-canvas" aria-hidden="true"></canvas>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="site-header">
+  <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="side-menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <a href="#home" class="logo">
+    <span class="logo-script">Eliz</span>
+    <span class="logo-star">&#9733;</span>
+    <span class="logo-studio">Studio</span>
+  </a>
+
+  <div class="header-right">
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="social-icons header-social" aria-label="Social media">
+      <a href="#" class="social-link" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="5"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="10"/><path d="M14.5 8.4h-1.7c-1.1 0-1.4.5-1.4 1.5v2.1h3l-.4 2.9h-2.6V21" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="Pinterest">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="10"/><path d="M9.2 18c.6-2.4 1.3-5.2 1.9-7.7.2-1 1-1.8 2.3-1.8 1.8 0 3 1.3 3 3.2 0 2.6-1.4 4.7-3.4 4.7-1 0-1.8-.5-2.1-1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M13.5 3.5v10.8a3.6 3.6 0 1 1-3.1-3.56" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 3.5c.4 2.7 2.3 4.3 4.7 4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HAMBURGER SIDE MENU ===== -->
+<nav id="side-menu" class="side-menu" aria-hidden="true" aria-label="Site sections">
+  <button class="close-btn" id="close-menu-btn" aria-label="Close menu">&times;</button>
+  <div class="side-menu-logo">Eliz <span>&#9733;</span> Studio</div>
+  <ul class="side-menu-list">
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#workshops">Workshops</a></li>
+    <li><a href="#custom-pieces">Custom Pieces</a></li>
+    <li><a href="#" id="login-link" data-open-modal="login-modal">Log In</a></li>
+  </ul>
+  <p class="side-menu-tagline">Where art meets luxury resin design</p>
+</nav>
+<div class="menu-overlay" id="menu-overlay"></div>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Luxury Resin Art &middot; Custom Pieces &middot; Workshops</p>
+      <h1 class="hero-title">
+        <span class="hero-title-script">Eliz</span>
+        <span class="hero-title-star">&#9733;</span>
+        <span class="hero-title-studio">Studio</span>
+      </h1>
+      <p class="hero-tagline">Where art meets luxury resin design</p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-gold">View Portfolio</a>
+        <a href="#custom-pieces" class="btn btn-outline">Request a Custom Piece</a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about-section">
+    <div class="section-inner about-grid">
+      <div class="about-portrait" aria-hidden="true">
+        <div class="portrait-ring"></div>
+      </div>
+      <div class="about-text">
+        <p class="section-kicker">About the Artist</p>
+        <h2>Eliz Stella</h2>
+        <p class="role">Artist &amp; Founder, Eliz Studio</p>
+        <p>Eliz Stella is a self-taught resin artist whose work blends molten color, crushed crystal, and 24k gold leaf into one-of-a-kind statement pieces. Every pour at Eliz Studio is hand-poured, hand-finished, and designed to feel like a frozen moment of geode magic.</p>
+        <p>From luxury wall art to bespoke commissions, each creation carries the same philosophy: art should sparkle, surprise, and feel entirely your own.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="section-inner">
+      <p class="section-kicker center">Luxury Resin Art</p>
+      <h2 class="center">Portfolio</h2>
+      <div class="gallery-grid">
+        <figure class="gallery-card art-emerald">
+          <div class="gallery-shine"></div>
+          <figcaption>Emerald Geode Study</figcaption>
+        </figure>
+        <figure class="gallery-card art-amethyst">
+          <div class="gallery-shine"></div>
+          <figcaption>Amethyst Wings</figcaption>
+        </figure>
+        <figure class="gallery-card art-blush">
+          <div class="gallery-shine"></div>
+          <figcaption>Blush Crystal Canyon</figcaption>
+        </figure>
+        <figure class="gallery-card art-botanical">
+          <div class="gallery-shine"></div>
+          <figcaption>Gilded Botanical</figcaption>
+        </figure>
+        <figure class="gallery-card art-sky">
+          <div class="gallery-shine"></div>
+          <figcaption>Celestial Drift</figcaption>
+        </figure>
+        <figure class="gallery-card art-onyx">
+          <div class="gallery-shine"></div>
+          <figcaption>Onyx &amp; Gold Tide</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORKSHOPS ===== -->
+  <section id="workshops" class="workshops-section">
+    <div class="section-inner">
+      <p class="section-kicker center">Learn the Craft</p>
+      <h2 class="center">Workshops</h2>
+      <div class="workshop-grid">
+        <div class="workshop-card">
+          <span class="workshop-number">01</span>
+          <h3>Resin Foundations</h3>
+          <p>An introduction to pouring, coloring, and curing — perfect for first-time artists.</p>
+        </div>
+        <div class="workshop-card">
+          <span class="workshop-number">02</span>
+          <h3>Geode &amp; Crystal Intensive</h3>
+          <p>Master the layered crushed-glass geode technique seen throughout the studio's signature pieces.</p>
+        </div>
+        <div class="workshop-card">
+          <span class="workshop-number">03</span>
+          <h3>Private Studio Session</h3>
+          <p>One-on-one guided session to create a custom piece to take home, glossed and gold-leafed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CUSTOM PIECES ===== -->
+  <section id="custom-pieces" class="custom-section">
+    <div class="section-inner custom-grid">
+      <div class="custom-text">
+        <p class="section-kicker">Made For You</p>
+        <h2>Custom Pieces</h2>
+        <p>Commission a one-of-a-kind resin artwork tailored to your palette, space, and story. From intimate tabletop pieces to gallery-scale statement walls, every custom order is designed in collaboration with you and finished by hand at Eliz Studio.</p>
+        <a href="#contact" class="btn btn-gold">Start Your Commission</a>
+      </div>
+      <div class="custom-visual" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ===== SHOP ===== -->
+  <section id="shop" class="shop-section">
+    <div class="section-inner">
+      <p class="section-kicker center">The Collection</p>
+      <h2 class="center">Shop</h2>
+      <p class="center shop-intro">Ready-to-ship resin art, coasters, and gilded keepsakes — new drops released in limited batches.</p>
+      <div class="shop-grid">
+        <div class="shop-card">
+          <div class="shop-thumb art-emerald"></div>
+          <h3>Geode Wall Art</h3>
+          <p>Statement pieces for the home or studio.</p>
+        </div>
+        <div class="shop-card">
+          <div class="shop-thumb art-amethyst"></div>
+          <h3>Mini Crystal Canvases</h3>
+          <p>Collectible accent pieces, hand-poured.</p>
+        </div>
+        <div class="shop-card">
+          <div class="shop-thumb art-botanical"></div>
+          <h3>Gilded Coaster Sets</h3>
+          <p>Botanical &amp; gold-leaf everyday luxury.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact-section">
+    <div class="section-inner contact-grid">
+      <div class="contact-text">
+        <p class="section-kicker">Get In Touch</p>
+        <h2>Contact</h2>
+        <p>Have a question about a piece, a workshop, or a custom commission? Send a note below and the studio will be in touch.</p>
+        <div class="social-icons contact-social" aria-label="Social media">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="5"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="10"/><path d="M14.5 8.4h-1.7c-1.1 0-1.4.5-1.4 1.5v2.1h3l-.4 2.9h-2.6V21" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="10"/><path d="M9.2 18c.6-2.4 1.3-5.2 1.9-7.7.2-1 1-1.8 2.3-1.8 1.8 0 3 1.3 3 3.2 0 2.6-1.4 4.7-3.4 4.7-1 0-1.8-.5-2.1-1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M13.5 3.5v10.8a3.6 3.6 0 1 1-3.1-3.56" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 3.5c.4 2.7 2.3 4.3 4.7 4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Your Email</label>
+          <input type="email" id="cf-email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold full-width">Send Message</button>
+        <p class="form-success" id="form-success" hidden>Thank you — your message has been received.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-top section-inner">
+    <div class="footer-brand">
+      <div class="logo footer-logo">
+        <span class="logo-script">Eliz</span>
+        <span class="logo-star">&#9733;</span>
+        <span class="logo-studio">Studio</span>
+      </div>
+      <p>Where art meets luxury resin design</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="#shop">Geode Wall Art</a></li>
+        <li><a href="#shop">Mini Crystal Canvases</a></li>
+        <li><a href="#shop">Gilded Coaster Sets</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Workshops</h4>
+      <ul>
+        <li><a href="#workshops">Resin Foundations</a></li>
+        <li><a href="#workshops">Geode &amp; Crystal Intensive</a></li>
+        <li><a href="#workshops">Private Studio Session</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#custom-pieces">Custom Pieces</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" data-open-modal="login-modal">Log In</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col stay-in-touch">
+      <h4>Stay in Touch</h4>
+      <p>Join the list for new drops, workshop dates, and studio updates.</p>
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" placeholder="Your email" aria-label="Email address" required>
+        <button type="submit" aria-label="Subscribe">&rarr;</button>
+      </form>
+      <div class="social-icons footer-social" aria-label="Social media">
+        <a href="#" class="social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="5"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="10"/><path d="M14.5 8.4h-1.7c-1.1 0-1.4.5-1.4 1.5v2.1h3l-.4 2.9h-2.6V21" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Pinterest">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="10"/><path d="M9.2 18c.6-2.4 1.3-5.2 1.9-7.7.2-1 1-1.8 2.3-1.8 1.8 0 3 1.3 3 3.2 0 2.6-1.4 4.7-3.4 4.7-1 0-1.8-.5-2.1-1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M13.5 3.5v10.8a3.6 3.6 0 1 1-3.1-3.56" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 3.5c.4 2.7 2.3 4.3 4.7 4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-payments section-inner">
+    <span class="payments-label">We Accept</span>
+    <div class="payment-icons">
+      <svg class="pay-icon" viewBox="0 0 38 24" aria-label="American Express"><rect width="38" height="24" rx="4" fill="#1F72CD"/><text x="19" y="15.5" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" fill="#fff">AMEX</text></svg>
+      <svg class="pay-icon" viewBox="0 0 38 24" aria-label="Apple Pay"><rect width="38" height="24" rx="4" fill="#000"/><path d="M13.6 9.2c.36-.45.6-1.06.54-1.68-.52.03-1.16.35-1.53.8-.34.39-.63 1.02-.55 1.62.6.05 1.18-.3 1.54-.74z" fill="#fff"/><path d="M14.13 10.06c-.85-.05-1.57.48-1.98.48-.4 0-1.02-.46-1.69-.45-.87.01-1.67.5-2.12 1.28-.9 1.57-.24 3.88.65 5.15.43.62.95 1.32 1.63 1.29.65-.03.9-.42 1.69-.42.79 0 1.01.42 1.7.41.7-.01 1.15-.63 1.58-1.25.5-.71.7-1.4.71-1.44-.02-.01-1.37-.53-1.38-2.09-.01-1.31 1.07-1.94 1.12-1.97-.61-.9-1.56-1-1.91-.99z" fill="#fff"/><text x="26" y="15.5" font-family="Arial,Helvetica,sans-serif" font-size="7.5" font-weight="600" fill="#fff">Pay</text></svg>
+      <svg class="pay-icon" viewBox="0 0 38 24" aria-label="Discover"><rect width="38" height="24" rx="4" fill="#F4F4F4"/><text x="3" y="15" font-family="Arial,Helvetica,sans-serif" font-size="6.3" font-weight="700" fill="#1A1A1A">DISCOVER</text><circle cx="32" cy="12" r="4" fill="#F58020"/></svg>
+      <svg class="pay-icon" viewBox="0 0 38 24" aria-label="Google Pay"><rect width="38" height="24" rx="4" fill="#fff" stroke="#dadce0" stroke-width="0.5"/><text x="6" y="15.5" font-family="Arial,Helvetica,sans-serif" font-size="8.5" font-weight="600" fill="#4285F4">G<tspan fill="#5f6368">Pay</tspan></text></svg>
+      <svg class="pay-icon" viewBox="0 0 38 24" aria-label="Mastercard"><rect width="38" height="24" rx="4" fill="#fff"/><circle cx="16" cy="12" r="7" fill="#EB001B"/><circle cx="24" cy="12" r="7" fill="#F79E1B"/><path d="M20 6.5a7 7 0 0 1 0 11 7 7 0 0 1 0-11z" fill="#FF5F00"/></svg>
+      <svg class="pay-icon" viewBox="0 0 38 24" aria-label="PayPal"><rect width="38" height="24" rx="4" fill="#fff"/><path d="M13.5 7.5h4.6c2.3 0 3.3 1.2 3 3-.3 2.1-2 3.4-4.2 3.4h-1.6l-.6 3.6h-2l1.6-10z" fill="#003087"/><path d="M16.3 9.2h4.1c2.1 0 3 1.1 2.7 2.8-.3 1.9-1.8 3.1-3.8 3.1h-1.5l-.5 3h-2l1-8.9z" fill="#009CDE"/></svg>
+      <svg class="pay-icon" viewBox="0 0 38 24" aria-label="Shop Pay"><rect width="38" height="24" rx="4" fill="#5A31F4"/><text x="19" y="15.5" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" fill="#fff">shop</text></svg>
+      <svg class="pay-icon" viewBox="0 0 38 24" aria-label="Visa"><rect width="38" height="24" rx="4" fill="#1A1F71"/><text x="19" y="16" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-style="italic" font-size="9.5" font-weight="700" fill="#fff">VISA</text></svg>
+      <svg class="pay-icon" viewBox="0 0 38 24" aria-label="UnionPay"><rect width="38" height="24" rx="4" fill="#fff"/><rect x="3" y="5" width="10" height="14" rx="1.5" fill="#E21836"/><rect x="14" y="5" width="10" height="14" rx="1.5" fill="#00447C"/><rect x="25" y="5" width="10" height="14" rx="1.5" fill="#007B84"/><text x="19" y="13" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="4.6" font-weight="700" fill="#fff">UnionPay</text></svg>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Eliz Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ===== LOGIN MODAL ===== -->
+<div id="login-modal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" data-close-modal="login-modal" aria-label="Close">&times;</button>
+    <p class="section-kicker center">Welcome Back</p>
+    <h3 class="center">Log In</h3>
+    <form id="login-form">
+      <div class="form-row">
+        <label for="li-email">Email</label>
+        <input type="email" id="li-email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="li-password">Password</label>
+        <input type="password" id="li-password" name="password" required>
+      </div>
+      <button type="submit" class="btn btn-gold full-width">Log In</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
