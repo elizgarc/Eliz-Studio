@@ -82,7 +82,7 @@ main section { position: relative; padding: 96px 0; scroll-margin-top: var(--hea
   opacity: 0.55;
 }
 
-/* ---------- Marble + gold-vein texture (shared, business-card finish) ---------- */
+/* ---------- Organic agate marble + gold-leaf veins (geode-resin finish) ---------- */
 .hero,
 .about-section,
 .portfolio-section,
@@ -93,15 +93,20 @@ main section { position: relative; padding: 96px 0; scroll-margin-top: var(--hea
 .site-footer {
   background-color: var(--black);
   background-image:
-    radial-gradient(ellipse at 10% 12%, rgba(29, 107, 77, 0.32), transparent 38%),
-    radial-gradient(ellipse at 90% 85%, rgba(20, 99, 87, 0.28), transparent 42%),
-    radial-gradient(ellipse at 55% 50%, rgba(13, 61, 44, 0.3), transparent 55%),
-    repeating-linear-gradient(118deg, transparent 0 38px, rgba(216,178,90,0.06) 38px 40px, transparent 40px 78px),
-    repeating-linear-gradient(35deg, transparent 0 60px, rgba(216,178,90,0.05) 60px 62px, transparent 62px 130px),
-    linear-gradient(155deg, #030503 0%, #081912 32%, #0b231b 55%, #050a07 100%);
+    /* drifting ivory-marble cells */
+    radial-gradient(ellipse 50% 42% at 4% 8%, rgba(246,241,228,0.16), transparent 60%),
+    radial-gradient(ellipse 38% 34% at 18% 22%, rgba(207,231,227,0.14), transparent 65%),
+    /* pale-to-deep teal agate bands */
+    radial-gradient(ellipse 46% 50% at 92% 14%, rgba(159,212,206,0.22), transparent 60%),
+    radial-gradient(ellipse 55% 50% at 100% 92%, rgba(29,107,77,0.5), transparent 58%),
+    radial-gradient(ellipse 48% 44% at 78% 70%, rgba(20,99,87,0.4), transparent 60%),
+    radial-gradient(ellipse 50% 46% at 18% 88%, rgba(15,61,44,0.5), transparent 58%),
+    radial-gradient(ellipse 36% 34% at 45% 48%, rgba(13,61,44,0.32), transparent 65%),
+    linear-gradient(160deg, #030704 0%, #081912 30%, #0b231b 55%, #04100b 100%);
+  background-blend-mode: screen, screen, screen, screen, screen, screen, screen, normal;
 }
 
-/* gold vein crack overlay — thin diagonal fractures like the business card */
+/* gold-leaf veins — soft branching clusters rather than straight cracks */
 .hero::before,
 .about-section::before,
 .portfolio-section::before,
@@ -113,13 +118,44 @@ main section { position: relative; padding: 96px 0; scroll-margin-top: var(--hea
   content: "";
   position: absolute;
   inset: 0;
+  background-repeat: no-repeat;
   background-image:
-    linear-gradient(72deg, transparent 49.7%, rgba(216,178,90,0.7) 49.92%, rgba(243,215,132,1) 50%, rgba(216,178,90,0.7) 50.08%, transparent 50.3%),
-    linear-gradient(160deg, transparent 23.3%, rgba(216,178,90,0.55) 23.55%, rgba(243,215,132,0.85) 23.65%, rgba(216,178,90,0.55) 23.75%, transparent 24%),
-    linear-gradient(-65deg, transparent 80.3%, rgba(216,178,90,0.5) 80.55%, rgba(243,215,132,0.8) 80.65%, rgba(216,178,90,0.5) 80.75%, transparent 81%),
-    linear-gradient(35deg, transparent 8.7%, rgba(216,178,90,0.4) 8.9%, rgba(243,215,132,0.65) 9%, rgba(216,178,90,0.4) 9.1%, transparent 9.3%);
-  opacity: 0.85;
+    linear-gradient(64deg, transparent 44%, rgba(156,122,46,0.5) 48%, rgba(243,215,132,0.95) 50%, rgba(156,122,46,0.5) 52%, transparent 56%),
+    linear-gradient(108deg, transparent 44%, rgba(156,122,46,0.45) 47%, rgba(243,215,132,0.9) 50%, rgba(156,122,46,0.45) 53%, transparent 56%),
+    linear-gradient(-28deg, transparent 44%, rgba(156,122,46,0.4) 47%, rgba(243,215,132,0.85) 50%, rgba(156,122,46,0.4) 53%, transparent 56%),
+    linear-gradient(150deg, transparent 44%, rgba(156,122,46,0.45) 47%, rgba(243,215,132,0.9) 50%, rgba(156,122,46,0.45) 53%, transparent 56%),
+    radial-gradient(ellipse 60% 50% at 50% 50%, rgba(243,215,132,0.5), transparent 70%);
+  background-size: 38% 30%, 30% 42%, 34% 26%, 26% 36%, 16% 20%;
+  background-position: 6% 4%, 88% 10%, 14% 78%, 80% 86%, 50% 46%;
+  opacity: 0.8;
+  mix-blend-mode: screen;
   pointer-events: none;
+}
+
+/* slow gold shimmer sweep for a brilliant, polished resin sheen */
+.hero::after,
+.about-section::after,
+.portfolio-section::after,
+.workshops-section::after,
+.custom-section::after,
+.shop-section::after,
+.contact-section::after,
+.site-footer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(115deg, transparent 30%, rgba(243,215,132,0.16) 46%, rgba(255,255,255,0.22) 50%, rgba(243,215,132,0.16) 54%, transparent 70%);
+  background-size: 260% 260%;
+  background-position: 0% 0%;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  animation: shimmer-sweep 14s ease-in-out infinite;
+}
+
+@keyframes shimmer-sweep {
+  0%   { background-position: 10% 0%; }
+  50%  { background-position: 90% 100%; }
+  100% { background-position: 10% 0%; }
 }
 
 /* ===================================================================
